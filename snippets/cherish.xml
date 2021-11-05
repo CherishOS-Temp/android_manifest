@@ -13,7 +13,7 @@
   <!-- GitLab -->
   <remote  name="gitlab"
            revision="twelve"
-           fetch="https://gitlab.com/CherishOS" />
+           fetch="https://gitlab.com/" />
 
   <!-- Rootdir -->
   <project path="bionic" name="android_bionic" groups="pdk" remote="cherish" />
