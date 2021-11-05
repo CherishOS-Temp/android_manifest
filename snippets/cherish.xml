@@ -98,6 +98,6 @@
   <project path="vendor/cherish" name="android_vendor_cherish" remote="cherish" />
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" groups="qcom,pdk-qcom" remote="cherish" />
   <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" groups="qcom,pdk-qcom" remote="cherish" />
-  <project path="vendor/gms" name="android_vendor_gms" remote="gitlab" clone-depth="1" />
+  <project path="vendor/gms" name="ElectroPerf/android_vendor_gms" remote="gitlab" revision="slime" clone-depth="1" />
 
 </manifest>
