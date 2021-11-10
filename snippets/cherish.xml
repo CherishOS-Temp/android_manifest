@@ -13,8 +13,8 @@
   <!-- GitLab -->
   <remote  name="gitlab"
            revision="twelve"
-           fetch="https://gitlab.com/" />
-		   
+           fetch="https://gitlab.com/CherishOS" />
+
   <remote  name="arrow"
            fetch="https://github.com/ArrowOS"
            review="https://review.arrowos.net/"
@@ -104,7 +104,7 @@
   <project path="vendor/cherish" name="android_vendor_cherish" remote="cherish" />
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" groups="qcom,pdk-qcom" remote="cherish" />
   <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" groups="qcom,pdk-qcom" remote="cherish" />
-  <project path="vendor/gms" name="ElectroPerf/android_vendor_gms" remote="gitlab" revision="slime" clone-depth="1" />
+  <project path="vendor/gms" name="android_vendor_gms" remote="gitlab" clone-depth="1" />
   <project path="vendor/nxp/opensource/interfaces/nfc" name="android_vendor_nxp_interfaces_opensource_nfc" remote="arrow" />
   <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="android_vendor_nxp_opensource_external_libnfc-nci" remote="arrow" />
   <project path="vendor/nxp/opensource/commonsys/frameworks" name="android_vendor_nxp_opensource_frameworks" remote="arrow" />
