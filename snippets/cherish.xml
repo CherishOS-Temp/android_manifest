@@ -9,6 +9,10 @@
   <remote  name="cherish"
            fetch="https://github.com/CherishOS-Temp/"
            revision="twelve" />
+  <!-- GitHub -->
+  <remote  name="cherish1"
+           fetch="https://github.com/CherishOS/"
+           revision="twelve" />
 
   <!-- GitLab -->
   <remote  name="gitlab"
@@ -44,11 +48,11 @@
   </project>
 
   <!-- Device -->
-  <project path="device/cherish/sepolicy" name="android_device_cherish_sepolicy" remote="cherish" />
-  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" groups="qcom,pdk-qcom" remote="cherish" />
-  <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" groups="qcom,pdk-qcom" remote="cherish" />
-  <project path="device/qcom/sepolicy-legacy" name="android_device_qcom_sepolicy" groups="qcom,pdk-qcom" revision="twelve-legacy" remote="cherish" />
-  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy" groups="qcom,pdk-qcom" revision="twelve-legacy-um" remote="cherish" />
+  <project path="device/cherish/sepolicy" name="android_device_cherish_sepolicy" remote="cherish1" />
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" groups="qcom,pdk-qcom" remote="cherish1" />
+  <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" groups="qcom,pdk-qcom" remote="cherish1" />
+  <project path="device/qcom/sepolicy-legacy" name="android_device_qcom_sepolicy" groups="qcom,pdk-qcom" revision="twelve-legacy" remote="cherish1" />
+  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy" groups="qcom,pdk-qcom" revision="twelve-legacy-um" remote="cherish1" />
 
   <!-- External -->
   <project path="external/colorkt" name="android_external_colorkt" groups="pdk" remote="cherish" />
@@ -99,7 +103,7 @@
   <project path="system/libhwbinder" name="android_system_libhwbinder" remote="cherish" />
   <project path="system/logging" name="android_system_logging" groups="pdk" remote="cherish" />
   <project path="system/netd" name="android_system_netd" remote="cherish" />
-  <project path="system/sepolicy" name="android_system_sepolicy" remote="cherish" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="cherish1" />
   <project path="system/vold" name="android_system_vold" groups="pdk" remote="cherish" />
 
   <!-- Vendor -->
