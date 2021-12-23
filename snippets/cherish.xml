@@ -23,6 +23,15 @@
            fetch="https://github.com/ArrowOS"
            review="https://review.arrowos.net/"
            revision="refs/heads/arrow-12.0" />
+  
+  <remote name="pixel-gitlab"
+          fetch="https://gitlab.com/PixelExperience"
+          revision="twelve" />
+  
+  <remote name="pixel"
+          fetch="https://github.com/PixelExperience"
+          revision="twelve"
+          review="gerrit.pixelexperience.org" />
 
   <!-- Rootdir -->
   <project path="bionic" name="android_bionic" groups="pdk" remote="cherish" />
@@ -65,7 +74,7 @@
 
   <!-- Frameworks -->
   <project path="frameworks/av" name="android_frameworks_av" remote="cherish" />
-  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="cherish" />
+  <project path="frameworks/base" name="android_frameworks_base" revision="test" remote="cherish" />
   <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" remote="cherish" />
   <project path="frameworks/native" name="android_frameworks_native" groups="pdk-cw-fs,pdk-fs" remote="cherish" />
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="cherish" />
@@ -81,8 +90,8 @@
   <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" groups="qcom_wlan,pdk-qcom" revision="twelve-caf" remote="cherish" />
 
   <!-- Packages -->
-  <project path="packages/apps/CherishSettings" name="android_packages_apps_Cherish" remote="cherish" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="cherish" />
+  <project path="packages/apps/CherishSettings" name="android_packages_apps_Cherish" revision="test" remote="cherish" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" revision="test" remote="cherish" />
   <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="cherish" />
   <project name="android_packages_apps_SimpleDeviceConfig" path="packages/apps/SimpleDeviceConfig" remote="cherish" />
   <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="cherish" />
@@ -107,10 +116,11 @@
   <project path="system/vold" name="android_system_vold" groups="pdk" remote="cherish" />
 
   <!-- Vendor -->
-  <project path="vendor/cherish" name="android_vendor_cherish" remote="cherish" />
+  <project path="vendor/cherish" name="android_vendor_cherish" revision="test" remote="cherish" />
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" groups="qcom,pdk-qcom" remote="cherish" />
   <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" groups="qcom,pdk-qcom" remote="cherish" />
-  <project path="vendor/gms" name="android_vendor_gms" remote="gitlab" clone-depth="1" />
+  <project path="vendor/gapps" name="vendor_gapps" remote="pixel-gitlab" clone-depth="1" />
+  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="pixel" />
   <project path="vendor/nxp/opensource/interfaces/nfc" name="android_vendor_nxp_interfaces_opensource_nfc" remote="arrow" />
   <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="android_vendor_nxp_opensource_external_libnfc-nci" remote="arrow" />
   <project path="vendor/nxp/opensource/commonsys/frameworks" name="android_vendor_nxp_opensource_frameworks" remote="arrow" />
