@@ -117,6 +117,9 @@
   <project path="system/netd" name="android_system_netd" remote="cherish" />
   <project path="system/sepolicy" name="android_system_sepolicy" remote="cherish" />
   <project path="system/vold" name="android_system_vold" groups="pdk" remote="cherish" />
+  
+    <!-- Packages -->
+  <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="cherish" />
 
   <!-- Vendor -->
   <project path="vendor/cherish" name="android_vendor_cherish" revision="test" remote="cherish" />
