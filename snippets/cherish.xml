@@ -117,14 +117,10 @@
   <project path="system/netd" name="android_system_netd" remote="cherish" />
   <project path="system/sepolicy" name="android_system_sepolicy" remote="cherish" />
   <project path="system/vold" name="android_system_vold" groups="pdk" remote="cherish" />
-  
-    <!-- Packages -->
-  <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="cherish" />
 
   <!-- Vendor -->
   <project path="vendor/cherish" name="android_vendor_cherish" revision="test" remote="cherish" />
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" groups="qcom,pdk-qcom" remote="cherish" />
-  <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" groups="qcom,pdk-qcom" remote="cherish" />
   <project path="vendor/gapps" name="vendor_gapps" remote="pixel-gitlab" clone-depth="1" />
   <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="pixel" />
   <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="android_vendor_qcom_opensource_commonsys-intf_bluetooth" remote="cherish" />
